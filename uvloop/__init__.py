@@ -6,9 +6,24 @@ import warnings as _warnings
 from . import includes as __includes  # NOQA
 from .loop import Loop as __BaseLoop  # NOQA
 from ._version import __version__  # NOQA
+from .shutdown import (  # NOQA
+    GracefulServer as GracefulServer,
+    ShutdownResult as ShutdownResult,
+    ShutdownState as ShutdownState,
+    install_signal_handlers as install_signal_handlers,
+    serve as serve,
+)
 
 
-__all__: _typing.Tuple[str, ...] = ('new_event_loop', 'run')
+__all__: _typing.Tuple[str, ...] = (
+    'new_event_loop',
+    'run',
+    'GracefulServer',
+    'ShutdownResult',
+    'ShutdownState',
+    'install_signal_handlers',
+    'serve',
+)
 _AbstractEventLoop = __asyncio.AbstractEventLoop
 
 

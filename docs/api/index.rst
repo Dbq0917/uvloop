@@ -18,3 +18,20 @@ uvloop
   :undoc-members:
   :inherited-members:
 
+
+Graceful shutdown
+-----------------
+
+.. autoclass:: uvloop.GracefulServer
+  :members:
+
+.. autoclass:: uvloop.ShutdownResult
+  :members:
+
+.. autoclass:: uvloop.ShutdownState
+  :members:
+
+.. autofunction:: uvloop.install_signal_handlers
+
+.. autofunction:: uvloop.serve
+
